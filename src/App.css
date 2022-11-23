@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./Fonts/SoDoSans-Light.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: fontbold;
+  src: url(./Fonts/SoDoSans-Bold.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+@font-face {
+  font-family: semibold;
+  src: url(./Fonts/SoDoSans-SemiBold.ttf);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+div{
+  font-family: myFirstFont;
+}
+
+
+.bold{
+  font-family: fontbold;
+
+}
+
+.semi{
+  font-family: semibold;
+
+}
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+  color:green;
+  background-color: #0000;
+  width: 150px;
+
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
+
+  /* the slides
+  .slick-slide {
+    margin: 0 27px;
+} */
+
+/* the parent */
+/* .slick-list {
+    margin: 0 -27px;
+} */
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 10px;}
+
+.shadow{
+  box-shadow: 0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;
+}
+
+
+
+
+.f{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
+  
+  /* img{display: block;margin:auto;} */
