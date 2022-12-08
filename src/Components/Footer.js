@@ -54,21 +54,21 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
+        <div className='hidden lg:inline'>
           <img src='https://www.starbucks.in/assets/images/appstoreiOS.png'/>
           <img src='https://www.starbucks.in/assets/images/appstoreAndroid.png'/>
         </div>
         </div>
 
         <h1 className='w-[90%] border-b-[1px] mx-auto '></h1>
-        <div className='w-[90%] py-6 pb-10 mx-auto flex justify-between items-center'>
-          <div className='flex text-[12px] gap-4 '>
+        <div className='w-[90%] py-6 pb-10 mx-auto flex justify-center md:justify-between items-center'>
+          <div className='flex text-[10px] md:text-[12px] gap-4 '>
             <p className='border-r-[1px] pr-3'>Web Accessiblity </p>
             <p className='border-r-[1px] pr-3'>Privacy Statement </p>
             <p className='border-r-[1px] pr-3'>Terms of Use </p>
             <p className=''>Contact Us </p>
           </div>
-          <p className='text-[10px]'>© 2022 Starbucks Coffee Company. All rights reserved.</p>
+          <p className='hidden md:inline text-[10px]'>© 2022 Starbucks Coffee Company. All rights reserved.</p>
         </div>
 
     </footer>

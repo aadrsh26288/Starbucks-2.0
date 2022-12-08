@@ -192,8 +192,8 @@ const Home = () => {
 <h2 className="md:text-[24px] bold text-[#0E382C]  text-[15px]">Latest Offerings</h2>
 <div className='flex md:flex-row flex-col gap-9'>
 
-  <div className="pb-4 md:w-[408px] w-[350px] flex flex-col gap-2 rounded-lg my-5  shadow">
-    <img src='https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/112898.jpg' className='md:w-[408px] w-[350px] h-[170px] object-cover rounded-t-lg '/>
+  <div className="pb-4  flex flex-col gap-2 rounded-lg my-5  shadow">
+    <img src='https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/112898.jpg' className='w-full object-cover rounded-t-lg '/>
     <div className="p-3">
     <img src='https://www.starbucks.in/assets/icon/veg.svg' />
     <p className='semi mt-3 text-lg'>Hazelnut Mocha Cheesecake Latte</p>
@@ -206,8 +206,8 @@ const Home = () => {
     </div>
   </div>
 
-  <div className="pb-4 md:w-[408px] w-[350px] flex flex-col gap-2 rounded-lg my-5  shadow">
-    <img src='https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/112905.jpg' className='md:w-[408px] w-[350px] h-[170px] object-cover rounded-t-lg '/>
+  <div className="pb-4  flex flex-col gap-2 rounded-lg my-5  shadow">
+    <img src='https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/112905.jpg' className='w-full object-cover rounded-t-lg '/>
     <div className="p-3">
     <img src='https://www.starbucks.in/assets/icon/veg.svg' />
     <p className='semi mt-3 text-lg'>Hazelnut Mocha Cheesecake Frappuccino</p>

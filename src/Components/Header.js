@@ -20,7 +20,7 @@ const Header = () => {
               <NavLink exact to='/' activeClassName='border-b-2 border-[#00754a] font-semibold '><p>Home</p></NavLink>  
               <NavLink to='/gift' activeClassName='border-b-2 border-[#00754a] font-semibold'><p>Gift</p></NavLink>  
               <NavLink to='/order' activeClassName='border-b-2 border-[#00754a] font-semibold'> <p>Order</p></NavLink> 
-              <NavLink  to='/pay'activeClassName='border-b-2 border-[#00754a] font-semibold'><p>Pay</p></NavLink>
+              {/* <NavLink  to='/pay'activeClassName='border-b-2 border-[#00754a] font-semibold'><p>Pay</p></NavLink> */}
               {/* <NavLink  to='' activeClassName='border-b-2 border-[#00754a] font-semibold'><p className=''>store</p></NavLink> */}
             </div>
             <div className='flex  shadow  p-2 gap-1 rounded-3xl px-3 '>
@@ -38,10 +38,12 @@ const Header = () => {
   <div className='md:hidden flex'>
        <Menu  className="burger-menu hidden " isOpen={isOpen} selectedKey={'entry'} onClose={() => setIsOpen(false)} >
       <Link to='/'> <Item  text={'Home'}></Item></Link> 
-        <Item text={'Gift'}></Item>
-          <Item itemKey={'notice'} text={'Announcement'}></Item>
-          <Item itemKey={'union'} text={'Union Inquiries'}></Item>
-          <Item itemKey={'entry'} text={'Entry information'}></Item>
+      <Link to='/gift'> <Item  text={'Gift'}></Item></Link> 
+      <Link to='/order'> <Item  text={'Order'}></Item></Link>
+      <Link to='/profile'> <Item  text={'profile'}></Item></Link> 
+
+
+       
 
       </Menu>      
        

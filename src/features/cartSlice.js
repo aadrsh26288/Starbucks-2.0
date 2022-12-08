@@ -8,18 +8,11 @@ export const cartSlice = createSlice({
     reducers:{
         add: (state,action) => {
             const exist = state.find((x)=>x.id===action.payload.id)
-      
-        
             if(exist) {
-              exist.qty++;
-              
-              
+              exist.qty++;   
             }else{
                 state.push({...action.payload,qty: 1})
-            }
-           
-
-            
+            } 
         },
         remove: (state,action) => {
             return state.filter((item)=>item.id !== action.payload)
