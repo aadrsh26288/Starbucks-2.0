@@ -8,7 +8,7 @@ import MyGift from './Components/Gift';
 import Order from './Components/Order'
 import Store from './Components/Store'
 import Profile from './Components/Profile'
-import Pay from './Components/Pay'
+import Shop from './Components/Shop'
 import { Provider } from "react-redux";
 import {store} from './features/store'
 
@@ -37,9 +37,10 @@ function App() {
           <Route path="/profile">
             <Profile/>
           </Route>
-          <Route path="/pay">
-            <Pay/>
+          <Route path="/shop">
+            <Shop/>
           </Route>
+      
         </Switch>
        <Footer/>
       </Router>

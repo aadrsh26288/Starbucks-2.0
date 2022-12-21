@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Pay = () => {
+const Shop = () => {
   return (
     <div className=''>
-
+       <h1>Shop</h1>
     </div>
   )
 }
 
-export default Pay
+export default Shop

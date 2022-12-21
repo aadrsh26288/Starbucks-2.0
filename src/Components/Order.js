@@ -30,14 +30,23 @@ const dispatch =  useDispatch()
 
         
 <div className="bg-[#f2f0eb] flex p-4 items-center justify-around ">
-  <button className=" text-[18px] hover:font-bold hover:border-b-2 border-black" onClick={()=>{FilterCard('Bestseller')}}>Bestseller</button>
+  <button className=" text-[18px] " onClick={()=>{setFood(Orders)}}>All</button>
+  <button className=" text-[18px] " onClick={()=>{FilterCard('Bestseller')}}>Bestseller</button>
   <button className=" text-[18px] " onClick={()=>{FilterCard('Espress')}}>Espress</button>
   <button className=" text-[18px] " onClick={()=>{FilterCard('Food')}}>Food</button>
   <button className=" text-[18px] " onClick={()=>{FilterCard('')}} >Merchandise</button>
   <button className=" text-[18px] " onClick={()=>{FilterCard('Ready')}} >Ready To Eat</button>
 
 </div>  
-          
+{/* advance filter */}
+
+{/* <div className="flex justify-between px-10">
+  <button>HigherToLower</button>
+  <button>LowerHigher</button>
+  <button>Trending</button>
+  <button>New</button>
+</div>
+           */}
 
       <div className="max-w-6xl mx-auto my-5 grid  gap-6 lg:grid-cols-3 md:grid-cols-2 mt-10">
         {

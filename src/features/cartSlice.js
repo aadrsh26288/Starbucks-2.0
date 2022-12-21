@@ -16,10 +16,16 @@ export const cartSlice = createSlice({
         },
         remove: (state,action) => {
             return state.filter((item)=>item.id !== action.payload)
-          }
+          },
+        FilterCard: (state,action) => {
+           const HigherToLower = state.reduce((a,b)=>{
+            return a-b; 
+           })
+            
+        }  
     }
 })
 
-export const { add , remove} = cartSlice.actions
+export const { add , remove , FilterCard} = cartSlice.actions
 
 export default cartSlice.reducer

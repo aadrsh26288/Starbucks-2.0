@@ -153,13 +153,13 @@ const Home = () => {
         const color = slide.id===1?'white':'black'
         return(
 
-          <div className={`flex md:flex-row flex-col justify-between border-black bg-[${slide.bg}]  text-${color} py-5`} key={slide.id}>
+          <div className={`flex w-full h-full md:flex-row flex-col justify-between border-black bg-[${slide.bg}]  text-${color} py-5`} key={slide.id}>
           <div className="flex">
           <div>
         <img src={slide.img} className='w-[200px] md:w-[110px] h-[205px]'/>
         </div>
         
-        <div className=' flex flex-col justify-between  p-4'>
+        <div className=' flex flex-col justify-between  gap-4 p-4'>
           <div>
           <p className='semi '>{slide.p1} </p>
           <p className='semi text-[25px]'>{slide.p2}</p>
@@ -167,7 +167,7 @@ const Home = () => {
           </div>
         
         <div className=''>
-          <p>Start ordering</p>
+          <p >Start ordering</p>
           <p>₹ {slide.price}</p>
         </div>
           </div>
@@ -175,8 +175,8 @@ const Home = () => {
         
         </div>
         <div className="flex flex-col justify-between  pb-5 ">
-        <p className='text-center'>{slide.p4}</p>
-        <button className='bg-white text-black semi py-3 mr-2 px-14 text-center rounded-3xl '>Order Now</button> 
+        <p className='md:inline hidden'>{slide.p4}</p>
+        <button className='bg-white text-black semi py-3 md:mr-2 mx-2 px-14 text-center rounded-3xl '>Order Now</button> 
         
         </div> 
         </div>
